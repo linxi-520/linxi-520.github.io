@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>林夕-自动过检测助手Pro DIY(开源) | 林夕博客</title><meta name="author" content="林夕"><meta name="copyright" content="林夕"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="软件名称：林夕-自动过检测助手 PRO系列DIY(开源) 123456欢迎使用我的软件！本文档将向您介绍如何正确使用软件，并提供一些常见问题的解答。  开发语言:易语言  开发平台:Windows 10  支持环境: &#96;Win10+&#96; &#96;Win Server 2019 2022&#96; 支持&#96;UWP&#96;功能即可  基于 &#96;林夕-自动过检测助手 V1.3.4 (08终版) Pro&#96; 开源版本  安装 安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="林夕-自动过检测助手Pro DIY(开源)">
+<meta property="og:url" content="https://linxi.tk/2024/03/26/autoread/index.html">
+<meta property="og:site_name" content="林夕博客">
+<meta property="og:description" content="软件名称：林夕-自动过检测助手 PRO系列DIY(开源) 123456欢迎使用我的软件！本文档将向您介绍如何正确使用软件，并提供一些常见问题的解答。  开发语言:易语言  开发平台:Windows 10  支持环境: &#96;Win10+&#96; &#96;Win Server 2019 2022&#96; 支持&#96;UWP&#96;功能即可  基于 &#96;林夕-自动过检测助手 V1.3.4 (08终版) Pro&#96; 开源版本  安装 安装">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/20/piF8gPK.png">
+<meta property="article:published_time" content="2024-03-26T02:47:32.353Z">
+<meta property="article:modified_time" content="2024-03-26T02:47:32.353Z">
+<meta property="article:author" content="林夕">
+<meta property="article:tag" content="工具">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://z1.ax1x.com/2023/10/20/piF8gPK.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://linxi.tk/2024/03/26/autoread/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lib.baomitu.com/font-awesome/6.2.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lib.baomitu.com/fancyapps-ui/4.0.31/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://lib.baomitu.com/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://lib.baomitu.com/flickr-justified-gallery/2.1.2/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '林夕-自动过检测助手Pro DIY(开源)',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-26 02:47:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="林夕博客" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://blog.linxi.tk/bz/"><i class="fa-fw fa fa-camera-retro"></i><span> 4K壁纸</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://pan.linxi.tk/"><i class="fa-fw fa fa-cube"></i><span> 林夕网盘</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://www.blssv.com/"><i class="fa-fw fas fa-video"></i><span> Vip影视</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 开发文档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/vueapi/"><i class="fa-fw fa fa-fire"></i><span> Vue接口</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-umbrella"></i><span> 激活专区</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://blog.linxi.tk/mobaxterm/"><i class="fa-fw fa fa-desktop"></i><span> MobaXterm专业版</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://www.toopic.cn/public/uploads/small/1642752084447164275208446.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">林夕博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://blog.linxi.tk/bz/"><i class="fa-fw fa fa-camera-retro"></i><span> 4K壁纸</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://pan.linxi.tk/"><i class="fa-fw fa fa-cube"></i><span> 林夕网盘</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://www.blssv.com/"><i class="fa-fw fas fa-video"></i><span> Vip影视</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 开发文档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/vueapi/"><i class="fa-fw fa fa-fire"></i><span> Vue接口</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-umbrella"></i><span> 激活专区</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://blog.linxi.tk/mobaxterm/"><i class="fa-fw fa fa-desktop"></i><span> MobaXterm专业版</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">林夕-自动过检测助手Pro DIY(开源)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-03-26T02:47:32.353Z" title="发表于 2024-03-26 02:47:32">2024-03-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-26T02:47:32.353Z" title="更新于 2024-03-26 02:47:32">2024-03-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="林夕-自动过检测助手Pro DIY(开源)"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<h1 id="软件名称：林夕-自动过检测助手-PRO系列DIY-开源"><a href="#软件名称：林夕-自动过检测助手-PRO系列DIY-开源" class="headerlink" title="软件名称：林夕-自动过检测助手 PRO系列DIY(开源)"></a>软件名称：林夕-自动过检测助手 PRO系列DIY(开源)</h1></blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">欢迎使用我的软件！本文档将向您介绍如何正确使用软件，并提供一些常见问题的解答。</span><br><span class="line"></span><br><span class="line">  开发语言:易语言</span><br><span class="line">  开发平台:Windows 10</span><br><span class="line">  支持环境: `Win10+` `Win Server 2019 2022` 支持`UWP`功能即可</span><br><span class="line">  基于 `林夕-自动过检测助手 V1.3.4 (08终版) Pro` 开源版本</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1></blockquote>
+<p>安装该软件请执行以下步骤：</p>
+<ol>
+<li>下载已编译程序 <a target="_blank" rel="noopener" href="https://linxi110.lanzouj.com/b00sfdvud">下载链接</a> 密码:gepf。</li>
+<li>开源E程序源代码下载程序 <a target="_blank" rel="noopener" href="https://linxi110.lanzouj.com/b00sfdxgb">下载链接</a> 密码:i6xb。</li>
+<li>运行软件即可。</li>
+<li>相关问题请提交邮件或在<a target="_blank" rel="noopener" href="https://github.com/linxi-520/linxipush">Github</a>咨询。</li>
+</ol>
+<blockquote>
+<h1 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h1></blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">欢迎使用该软件！您需要完成以下步骤才能开始使用：</span><br><span class="line"></span><br><span class="line">1. 打开微信双击wxpusher窗口单独调出小窗口缩小至只显示一个通知。</span><br><span class="line">2. 打开该软件。</span><br><span class="line">3. 点击开始运行。</span><br><span class="line">3. 查看当前识别以及异常数量是否正常。</span><br></pre></td></tr></table></figure>
+<h3 id="单号、多号的区别"><a href="#单号、多号的区别" class="headerlink" title="单号、多号的区别:"></a><code>单号、多号的区别</code>:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">单号：代表可以并仅可以用一个微信号使用，实现一对一或者一对多。</span><br><span class="line">多号：代表可以微信多开使用多个wxpusher窗口，来实现多对多。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h1 id="功能列表"><a href="#功能列表" class="headerlink" title="功能列表"></a>功能列表</h1></blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">该软件具有以下功能：</span><br><span class="line"></span><br><span class="line">1. 自动化稳定过检测-实现自动打开。</span><br><span class="line">2. 适配所有通知信息-只要是wxpusher的通知都适用。</span><br><span class="line">3. 自动关闭已读窗口-自动关闭浏览器窗口，避免内存溢出。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h1 id="技术支持"><a href="#技术支持" class="headerlink" title="技术支持"></a>技术支持</h1></blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">如果您在使用过程中遇到问题，请联系我们的技术支持团队：</span><br><span class="line"></span><br><span class="line">- 电子邮件：admin@linxi.tk</span><br><span class="line">- 官方网站：[林夕博客](https://linxi.tk/)</span><br><span class="line">- 仅供学习交流，严禁用于商业、非法盈利、违法用途，请使用者遵守《网络安全法》，请于24小时内删除。如出现上述情况，责任自负！</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h1 id="截图展示"><a href="#截图展示" class="headerlink" title="截图展示"></a>截图展示</h1></blockquote>
+<p><img src="https://z1.ax1x.com/2023/10/20/piF8gPK.png" alt="软件图片"><br><img src="https://s21.ax1x.com/2024/03/21/pFfYHAO.png" alt="软件图片"></p>
+<blockquote>
+<h1 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h1></blockquote>
+<h3 id="林夕-自动过检测助手-PRO系列DIY-开源版"><a href="#林夕-自动过检测助手-PRO系列DIY-开源版" class="headerlink" title="林夕-自动过检测助手 PRO系列DIY (开源版)"></a><code>林夕-自动过检测助手 PRO系列DIY</code> (<code>开源版</code>)</h3><ul>
+<li>版本 1.2.3 (2024-02-01)：开源多号版DIY操作,暂不开源OCR优化细节。</li>
+</ul>
+<h3 id="林夕-自动过检测助手-V1-3-4-单号版"><a href="#林夕-自动过检测助手-V1-3-4-单号版" class="headerlink" title="林夕-自动过检测助手 V1.3.4 (单号版)"></a><code>林夕-自动过检测助手 V1.3.4</code> (<code>单号版</code>)</h3><ul>
+<li>版本 1.0.0 (2023-08-29)：首次发布该软件。</li>
+<li>版本 1.0.1 (2023-08-31)：增强识别正确率。</li>
+<li>版本 1.1.1 (2023-09-05)：优化代码逻辑性。</li>
+<li>版本 1.1.3 (2023-09-08)：完善工具适用性。</li>
+<li>版本 1.2.0 (2023-09-15)：新增自动关闭功能。</li>
+<li>版本 1.2.3 (2023-09-20)：新增自动回调功能。</li>
+<li>版本 1.2.4 (2023-09-25)：优化自动关闭功能。</li>
+<li>版本 1.3.0 (2023-09-30)：增强识别效率以及软件效率。</li>
+<li>版本 1.3.3 (2023-10-01)：解决软件进程残留。</li>
+<li>版本 1.3.4 (2023-10-08)：优化软件进程残留问题。</li>
+</ul>
+<h3 id="林夕-自动过检测助手-V1-1-3-多号版"><a href="#林夕-自动过检测助手-V1-1-3-多号版" class="headerlink" title="林夕-自动过检测助手 V1.1.3 (多号版)"></a><code>林夕-自动过检测助手 V1.1.3</code> (<code>多号版</code>)</h3><ul>
+<li>版本 1.0.0 (2023-09-08)：基于单号版本修改发布。</li>
+<li>版本 1.0.1 (2023-09-15)：新增自动关闭功能。</li>
+<li>版本 1.0.2 (2023-09-20)：新增自动回调功能。</li>
+<li>版本 1.0.3 (2023-09-25)：优化自动关闭功能。</li>
+<li>版本 1.1.1 (2023-09-30)：增强识别效率以及软件效率。</li>
+<li>版本 1.1.2 (2023-10-01)：解决软件进程残留。</li>
+<li>版本 1.1.3 (2023-10-08)：优化软件进程残留问题。</li>
+</ul>
+<h3 id="林夕-自动过检测助手-V1-0-1-开发版"><a href="#林夕-自动过检测助手-V1-0-1-开发版" class="headerlink" title="林夕-自动过检测助手 V1.0.1 (开发版)"></a><code>林夕-自动过检测助手 V1.0.1</code> (<code>开发版</code>)</h3><ul>
+<li>版本 1.0.0 (2023-10-01)：基于多号版修改发布。</li>
+<li>版本 1.0.1 (2023-10-08)：支持自定义回调、自定义窗口理论适配任何微信通知窗口。</li>
+</ul>
+<blockquote>
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1></blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- Q: 我无法正常启动软件。</span><br><span class="line">  - A: 如果您遇到该问题，请确保您已经正确安装了软件，并且操作系统满足最低要求。如果问题仍然存在，请联系我们的技术支持团队。</span><br><span class="line"></span><br><span class="line">- Q: 软件当前识别空白无法识别到时间？</span><br><span class="line">  - A: 请设置电脑的分辨率为125% 更为友好和准确。</span><br><span class="line"></span><br><span class="line">- Q: 软件识别之后无法正常点击？</span><br><span class="line">  - A: 请检查窗口是否被单独调出，并且通知窗口只缩小到显示一个通知的大小。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1></blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">该软件是一个先进的工具，可以帮助您实现自动化点击的任务。通过使用该软件，您将能够获得更高效、更准确的工作结果。我希望您能够喜欢并受益于该软件！</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://linxi.tk">林夕</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://linxi.tk/2024/03/26/autoread/">https://linxi.tk/2024/03/26/autoread/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://linxi.tk" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://linxi.tk" target="_blank">林夕博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%B7%A5%E5%85%B7/">工具</a></div><div class="post_share"><div class="social-share" data-image="https://z1.ax1x.com/2023/10/20/piF8gPK.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://lib.baomitu.com/butterfly-extsrc/1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://lib.baomitu.com/butterfly-extsrc/1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2024/03/26/CloudFlare/"><img class="prev-cover" src="https://cf-assets.www.cloudflare.com/slt3lc6tev37/1wf4qdGsPqa2UUSEoa4Yyg/3250a65f210bbb7062ab4dd9a9bdf213/logo-cloudflare-dark.svg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">CloudFlare + DNSPod 优选IP 自动更新</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">林夕</div><div class="author-info__description">分享一些实用的资源和记录学习和工作中出现的BUG解决方案</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/linxi-520"><i class="fa fa-flag-checkered"></i><span>我的Github仓库</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎进入林夕博客！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%90%8D%E7%A7%B0%EF%BC%9A%E6%9E%97%E5%A4%95-%E8%87%AA%E5%8A%A8%E8%BF%87%E6%A3%80%E6%B5%8B%E5%8A%A9%E6%89%8B-PRO%E7%B3%BB%E5%88%97DIY-%E5%BC%80%E6%BA%90"><span class="toc-number">1.</span> <span class="toc-text">软件名称：林夕-自动过检测助手 PRO系列DIY(开源)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8"><span class="toc-number">3.</span> <span class="toc-text">快速入门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E5%8F%B7%E3%80%81%E5%A4%9A%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.0.1.</span> <span class="toc-text">单号、多号的区别:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8"><span class="toc-number">4.</span> <span class="toc-text">功能列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81"><span class="toc-number">5.</span> <span class="toc-text">技术支持</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%AA%E5%9B%BE%E5%B1%95%E7%A4%BA"><span class="toc-number">6.</span> <span class="toc-text">截图展示</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95"><span class="toc-number">7.</span> <span class="toc-text">更新记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%97%E5%A4%95-%E8%87%AA%E5%8A%A8%E8%BF%87%E6%A3%80%E6%B5%8B%E5%8A%A9%E6%89%8B-PRO%E7%B3%BB%E5%88%97DIY-%E5%BC%80%E6%BA%90%E7%89%88"><span class="toc-number">7.0.1.</span> <span class="toc-text">林夕-自动过检测助手 PRO系列DIY (开源版)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%97%E5%A4%95-%E8%87%AA%E5%8A%A8%E8%BF%87%E6%A3%80%E6%B5%8B%E5%8A%A9%E6%89%8B-V1-3-4-%E5%8D%95%E5%8F%B7%E7%89%88"><span class="toc-number">7.0.2.</span> <span class="toc-text">林夕-自动过检测助手 V1.3.4 (单号版)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%97%E5%A4%95-%E8%87%AA%E5%8A%A8%E8%BF%87%E6%A3%80%E6%B5%8B%E5%8A%A9%E6%89%8B-V1-1-3-%E5%A4%9A%E5%8F%B7%E7%89%88"><span class="toc-number">7.0.3.</span> <span class="toc-text">林夕-自动过检测助手 V1.1.3 (多号版)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%97%E5%A4%95-%E8%87%AA%E5%8A%A8%E8%BF%87%E6%A3%80%E6%B5%8B%E5%8A%A9%E6%89%8B-V1-0-1-%E5%BC%80%E5%8F%91%E7%89%88"><span class="toc-number">7.0.4.</span> <span class="toc-text">林夕-自动过检测助手 V1.0.1 (开发版)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-number">8.</span> <span class="toc-text">常见问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AE%BA"><span class="toc-number">9.</span> <span class="toc-text">结论</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/03/26/CloudFlare/" title="CloudFlare + DNSPod 优选IP 自动更新"><img src="https://cf-assets.www.cloudflare.com/slt3lc6tev37/1wf4qdGsPqa2UUSEoa4Yyg/3250a65f210bbb7062ab4dd9a9bdf213/logo-cloudflare-dark.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CloudFlare + DNSPod 优选IP 自动更新"/></a><div class="content"><a class="title" href="/2024/03/26/CloudFlare/" title="CloudFlare + DNSPod 优选IP 自动更新">CloudFlare + DNSPod 优选IP 自动更新</a><time datetime="2024-03-26T02:47:32.353Z" title="发表于 2024-03-26 02:47:32">2024-03-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/26/autoread/" title="林夕-自动过检测助手Pro DIY(开源)"><img src="https://z1.ax1x.com/2023/10/20/piF8gPK.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="林夕-自动过检测助手Pro DIY(开源)"/></a><div class="content"><a class="title" href="/2024/03/26/autoread/" title="林夕-自动过检测助手Pro DIY(开源)">林夕-自动过检测助手Pro DIY(开源)</a><time datetime="2024-03-26T02:47:32.353Z" title="发表于 2024-03-26 02:47:32">2024-03-26</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 林夕</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lib.baomitu.com/fancyapps-ui/4.0.31/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://lib.baomitu.com/butterfly-extsrc/1.1.3/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --></body></html>

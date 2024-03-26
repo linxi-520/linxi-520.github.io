@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>林夕博客</title>
+  
+  <subtitle>林夕</subtitle>
+  <link href="https://linxi.tk/atom.xml" rel="self"/>
+  
+  <link href="https://linxi.tk/"/>
+  <updated>2024-03-26T02:47:32.353Z</updated>
+  <id>https://linxi.tk/</id>
+  
+  <author>
+    <name>林夕</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CloudFlare + DNSPod 优选IP 自动更新</title>
+    <link href="https://linxi.tk/2024/03/26/CloudFlare/"/>
+    <id>https://linxi.tk/2024/03/26/CloudFlare/</id>
+    <published>2024-03-26T02:47:32.353Z</published>
+    <updated>2024-03-26T02:47:32.353Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="🌐-域名延迟优选-在线方式"><a href="#🌐-域名延迟优选-在线方式" class="headerlink" title="🌐 域名延迟优选 (在线方式):"></a>🌐 域名延迟优选 (在线方式):</h2><p>监控网站:</p><ul><li>全球主机监控: <a href="https://stock.hostmonit.com/CloudFlareYes">https://stock.hostmonit.com/CloudFlareYes</a></li><li>云服务监测平台: <a href="https://monitor.gacjie.cn/page/cloudflare/ipv4.html">https://monitor.gacjie.cn/page/cloudflare/ipv4.html</a></li></ul><p>从上述网站爬取 <code>联通</code> <code>电信</code> <code>移动</code> 等线路的IPv4&#x2F;IPv6的优选<code>延迟最低</code>的IP地址</p><hr><h2 id="🔒-DNSPod-分线路解析优选"><a href="#🔒-DNSPod-分线路解析优选" class="headerlink" title="🔒 DNSPod 分线路解析优选:"></a>🔒 DNSPod 分线路解析优选:</h2><p>准备一个域名: </p><ul><li>主域名 <code>cdn.xxxxx.gq</code> 解析到DNSPod备用</li></ul><p>移动优选: <code>cmcc.cdn.xxxxx.gq</code></p><p>联通优选: <code>cucc.cdn.xxxxx.gq</code></p><p>电信优选: <code>ctcc.cdn.xxxxx.gq</code><br><a href="https://imgse.com/i/pFfB1wn"><img src="https://s21.ax1x.com/2024/03/21/pFfB1wn.png" alt="pFfB1wn.png"></a><br>获取域名的API 区域ID:</p><p><a href="https://imgse.com/i/pFfBBwR"><img src="https://s21.ax1x.com/2024/03/21/pFfBBwR.png" alt="pFfBBwR.png"></a></p><p>获取当前域名的API 令牌,没有可以创建一个:</p><p><a href="https://imgse.com/i/pFfBJYV"><img src="https://s21.ax1x.com/2024/03/21/pFfBJYV.png" alt="pFfBJYV.png"></a></p><p>修改相关内容:</p><p><a href="https://imgse.com/i/pFfByY6"><img src="https://s21.ax1x.com/2024/03/21/pFfByY6.png" alt="pFfByY6.png"></a></p><p>使用脚本自动更新DNS:</p><p><a href="https://imgse.com/i/pFfBhmd"><img src="https://s21.ax1x.com/2024/03/21/pFfBhmd.png" alt="pFfBhmd.png"></a></p><p>GitHub 仓库地址: <a href="https://github.com/linxi-520/LinxiPush/tree/main/CloudFlare">Linxi-Push</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;🌐-域名延迟优选-在线方式&quot;&gt;&lt;a href=&quot;#🌐-域名延迟优选-在线方式&quot; class=&quot;headerlink&quot; title=&quot;🌐 域名延迟优选 (在线方式):&quot;&gt;&lt;/a&gt;🌐 域名延迟优选 (在线方式):&lt;/h2&gt;&lt;p&gt;监控网站:&lt;/p&gt;
+&lt;ul&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://linxi.tk/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="https://linxi.tk/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>林夕-自动过检测助手Pro DIY(开源)</title>
+    <link href="https://linxi.tk/2024/03/26/autoread/"/>
+    <id>https://linxi.tk/2024/03/26/autoread/</id>
+    <published>2024-03-26T02:47:32.353Z</published>
+    <updated>2024-03-26T02:47:32.353Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><h1 id="软件名称：林夕-自动过检测助手-PRO系列DIY-开源"><a href="#软件名称：林夕-自动过检测助手-PRO系列DIY-开源" class="headerlink" title="软件名称：林夕-自动过检测助手 PRO系列DIY(开源)"></a>软件名称：林夕-自动过检测助手 PRO系列DIY(开源)</h1></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">欢迎使用我的软件！本文档将向您介绍如何正确使用软件，并提供一些常见问题的解答。</span><br><span class="line"></span><br><span class="line">  开发语言:易语言</span><br><span class="line">  开发平台:Windows 10</span><br><span class="line">  支持环境: `Win10+` `Win Server 2019 2022` 支持`UWP`功能即可</span><br><span class="line">  基于 `林夕-自动过检测助手 V1.3.4 (08终版) Pro` 开源版本</span><br></pre></td></tr></table></figure><blockquote><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1></blockquote><p>安装该软件请执行以下步骤：</p><ol><li>下载已编译程序 <a href="https://linxi110.lanzouj.com/b00sfdvud">下载链接</a> 密码:gepf。</li><li>开源E程序源代码下载程序 <a href="https://linxi110.lanzouj.com/b00sfdxgb">下载链接</a> 密码:i6xb。</li><li>运行软件即可。</li><li>相关问题请提交邮件或在<a href="https://github.com/linxi-520/linxipush">Github</a>咨询。</li></ol><blockquote><h1 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h1></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">欢迎使用该软件！您需要完成以下步骤才能开始使用：</span><br><span class="line"></span><br><span class="line">1. 打开微信双击wxpusher窗口单独调出小窗口缩小至只显示一个通知。</span><br><span class="line">2. 打开该软件。</span><br><span class="line">3. 点击开始运行。</span><br><span class="line">3. 查看当前识别以及异常数量是否正常。</span><br></pre></td></tr></table></figure><h3 id="单号、多号的区别"><a href="#单号、多号的区别" class="headerlink" title="单号、多号的区别:"></a><code>单号、多号的区别</code>:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">单号：代表可以并仅可以用一个微信号使用，实现一对一或者一对多。</span><br><span class="line">多号：代表可以微信多开使用多个wxpusher窗口，来实现多对多。</span><br></pre></td></tr></table></figure><blockquote><h1 id="功能列表"><a href="#功能列表" class="headerlink" title="功能列表"></a>功能列表</h1></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">该软件具有以下功能：</span><br><span class="line"></span><br><span class="line">1. 自动化稳定过检测-实现自动打开。</span><br><span class="line">2. 适配所有通知信息-只要是wxpusher的通知都适用。</span><br><span class="line">3. 自动关闭已读窗口-自动关闭浏览器窗口，避免内存溢出。</span><br></pre></td></tr></table></figure><blockquote><h1 id="技术支持"><a href="#技术支持" class="headerlink" title="技术支持"></a>技术支持</h1></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">如果您在使用过程中遇到问题，请联系我们的技术支持团队：</span><br><span class="line"></span><br><span class="line">- 电子邮件：admin@linxi.tk</span><br><span class="line">- 官方网站：[林夕博客](https://linxi.tk/)</span><br><span class="line">- 仅供学习交流，严禁用于商业、非法盈利、违法用途，请使用者遵守《网络安全法》，请于24小时内删除。如出现上述情况，责任自负！</span><br></pre></td></tr></table></figure><blockquote><h1 id="截图展示"><a href="#截图展示" class="headerlink" title="截图展示"></a>截图展示</h1></blockquote><p><img src="https://z1.ax1x.com/2023/10/20/piF8gPK.png" alt="软件图片"><br><img src="https://s21.ax1x.com/2024/03/21/pFfYHAO.png" alt="软件图片"></p><blockquote><h1 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h1></blockquote><h3 id="林夕-自动过检测助手-PRO系列DIY-开源版"><a href="#林夕-自动过检测助手-PRO系列DIY-开源版" class="headerlink" title="林夕-自动过检测助手 PRO系列DIY (开源版)"></a><code>林夕-自动过检测助手 PRO系列DIY</code> (<code>开源版</code>)</h3><ul><li>版本 1.2.3 (2024-02-01)：开源多号版DIY操作,暂不开源OCR优化细节。</li></ul><h3 id="林夕-自动过检测助手-V1-3-4-单号版"><a href="#林夕-自动过检测助手-V1-3-4-单号版" class="headerlink" title="林夕-自动过检测助手 V1.3.4 (单号版)"></a><code>林夕-自动过检测助手 V1.3.4</code> (<code>单号版</code>)</h3><ul><li>版本 1.0.0 (2023-08-29)：首次发布该软件。</li><li>版本 1.0.1 (2023-08-31)：增强识别正确率。</li><li>版本 1.1.1 (2023-09-05)：优化代码逻辑性。</li><li>版本 1.1.3 (2023-09-08)：完善工具适用性。</li><li>版本 1.2.0 (2023-09-15)：新增自动关闭功能。</li><li>版本 1.2.3 (2023-09-20)：新增自动回调功能。</li><li>版本 1.2.4 (2023-09-25)：优化自动关闭功能。</li><li>版本 1.3.0 (2023-09-30)：增强识别效率以及软件效率。</li><li>版本 1.3.3 (2023-10-01)：解决软件进程残留。</li><li>版本 1.3.4 (2023-10-08)：优化软件进程残留问题。</li></ul><h3 id="林夕-自动过检测助手-V1-1-3-多号版"><a href="#林夕-自动过检测助手-V1-1-3-多号版" class="headerlink" title="林夕-自动过检测助手 V1.1.3 (多号版)"></a><code>林夕-自动过检测助手 V1.1.3</code> (<code>多号版</code>)</h3><ul><li>版本 1.0.0 (2023-09-08)：基于单号版本修改发布。</li><li>版本 1.0.1 (2023-09-15)：新增自动关闭功能。</li><li>版本 1.0.2 (2023-09-20)：新增自动回调功能。</li><li>版本 1.0.3 (2023-09-25)：优化自动关闭功能。</li><li>版本 1.1.1 (2023-09-30)：增强识别效率以及软件效率。</li><li>版本 1.1.2 (2023-10-01)：解决软件进程残留。</li><li>版本 1.1.3 (2023-10-08)：优化软件进程残留问题。</li></ul><h3 id="林夕-自动过检测助手-V1-0-1-开发版"><a href="#林夕-自动过检测助手-V1-0-1-开发版" class="headerlink" title="林夕-自动过检测助手 V1.0.1 (开发版)"></a><code>林夕-自动过检测助手 V1.0.1</code> (<code>开发版</code>)</h3><ul><li>版本 1.0.0 (2023-10-01)：基于多号版修改发布。</li><li>版本 1.0.1 (2023-10-08)：支持自定义回调、自定义窗口理论适配任何微信通知窗口。</li></ul><blockquote><h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- Q: 我无法正常启动软件。</span><br><span class="line">  - A: 如果您遇到该问题，请确保您已经正确安装了软件，并且操作系统满足最低要求。如果问题仍然存在，请联系我们的技术支持团队。</span><br><span class="line"></span><br><span class="line">- Q: 软件当前识别空白无法识别到时间？</span><br><span class="line">  - A: 请设置电脑的分辨率为125% 更为友好和准确。</span><br><span class="line"></span><br><span class="line">- Q: 软件识别之后无法正常点击？</span><br><span class="line">  - A: 请检查窗口是否被单独调出，并且通知窗口只缩小到显示一个通知的大小。</span><br></pre></td></tr></table></figure><blockquote><h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">该软件是一个先进的工具，可以帮助您实现自动化点击的任务。通过使用该软件，您将能够获得更高效、更准确的工作结果。我希望您能够喜欢并受益于该软件！</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;h1 id=&quot;软件名称：林夕-自动过检测助手-PRO系列DIY-开源&quot;&gt;&lt;a href=&quot;#软件名称：林夕-自动过检测助手-PRO系列DIY-开源&quot; class=&quot;headerlink&quot; title=&quot;软件名称：林夕-自动过检测助手 PRO系列DIY(</summary>
+      
+    
+    
+    
+    <category term="工具" scheme="https://linxi.tk/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="工具" scheme="https://linxi.tk/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+</feed>
